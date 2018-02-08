@@ -1,0 +1,124 @@
+.live-help{
+    display:none
+}
+ .lpChatButtonSpSm a{
+    font-size:1px;
+    line-height:1px
+}
+ @media only screen and (min-width:600px){
+    .live-help{
+        display:block;
+        position:fixed;
+        right:0;
+        top:260px;
+        z-index:501
+    }
+     .live-help a{
+        color:#0e6aa8;
+        text-decoration:none
+    }
+     .live-help .btn-live-help{
+        background:url(/etc/designs/pnc-ms-forms/images/sprite_btn_live_help_sm.png) no-repeat;
+        display:block;
+        font:12px/40px "PNC Sans Bold",Arial,sans-serif;
+        height:40px;
+        position:relative;
+        text-shadow:1px 1px 1px #fff;
+        text-transform:uppercase;
+        width:51px;
+        white-space:nowrap;
+        text-indent:51px;
+        overflow:hidden
+    }
+     .live-help .btn-live-help:hover{
+        background-position:0 -40px
+    }
+     .live-help.open .btn-live-help{
+        background:url(/etc/designs/pnc-ms-forms/images/btn_live_help_open.png) no-repeat;
+        height:36px;
+        text-indent:16px;
+        width:231px
+    }
+     .live-help.open .btn-live-help span{
+        visibility:hidden
+    }
+     .live-help .live-help-panel{
+        background:url(/etc/designs/pnc-ms-forms/images/bg_live_help.png) no-repeat;
+        background-size:auto 100%;
+        display:none;
+        min-height:129px;
+        overflow:hidden;
+        padding:0 18px;
+        position:relative;
+        top:0;
+        width:230px;
+    }
+     .live-help .live-help-panel{
+        filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/etc/designs/pnc-ms-forms/images/img/bg_live_help.png',sizingMethod='scale');
+        -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader( src='/etc/designs/pnc-ms-forms/images/bg_live_help.png', sizingMethod='scale')"
+    }
+     .live-help .live-help-panel.open{
+        display:block
+    }
+     .live-help .live-help-liveperson,.live-help .live-help-telephone{
+        padding:12px 0
+    }
+     .live-help .live-help-telephone{
+        border-top:1px solid #dadada
+    }
+     .live-help .live-help-panel h6{
+        color:#484848;
+        font:14px/16px "PNC Sans Bold",Arial,sans-serif;
+        margin:4px 0
+    }
+     .live-help .live-help-liveperson h6 a{
+        background:url(/etc/designs/pnc-ms-forms/images/icon_liveperson.png) no-repeat left top;
+        display:inline-block;
+        line-height:24px;
+        min-height:19px;
+        padding-left:30px
+    }
+     .live-help .live-help-liveperson h6 a:hover{
+        text-decoration:underline
+    }
+     .live-help .live-help-panel p{
+        color:#484848;
+        font:12px/14px "PNC Sans Regular",Arial,sans-serif;
+        margin:8px 0
+    }
+     .live-help .live-help-panel p b{
+        font:12px/14px "PNC Sans Bold",Arial,sans-serif
+    }
+     .live-help .live-help-sched-row{
+        margin:4px 0
+    }
+     #lpChatButton{
+        min-height:60px
+    }
+     #lpChatButton .loading{
+        margin:0 auto;
+        display:block;
+        padding-top:20px
+    }
+}
+ @media screen and (min-width:980px){
+    .live-help .btn-live-help{
+        background-image:url(/etc/designs/pnc-ms-forms/images/sprite_btn_live_help.png);
+        width:101px;
+        text-indent:12px
+    }
+     .pdp-container .live-help{
+        top:370px;
+        z-index:400
+    }
+}
+ .global-container .live-help{
+    position:static
+}
+ .global-container .live-help .live-help-panel{
+    display:block
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .live-help{right:17px;}
+}
